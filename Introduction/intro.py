@@ -184,3 +184,450 @@ print("My name is :",name,"Age is :",age)
 # print("Pz" not in "Pawan")
 
 # print("Apples", "Orange", "Mango", sep=", ", end=" are fruits!")
+
+
+# x =10
+
+# y = 5
+
+# print(x&y)
+# print(x|y)
+# print(x^y)
+# print(x<<2)
+# print(x>>2)
+# print(~x)
+
+
+# age = int(input("Enter your age : "))
+
+# if (age>=18):
+#     print("You are eligible to vote!")
+# else:
+#     print("You are not eligible to vote!")
+
+
+# marks = int(input("Enter your marks :"))
+
+# if marks>=90:
+#     print("Grade A")
+# elif marks>=80:
+#     print("Grade B")
+# elif marks>=70:
+#     print("Grade C")
+# elif marks>=60:
+#     print("Grade D")
+# else:
+#     print("Sorry you are faield!")
+
+
+# num = int(input("Enter Number :"))
+
+# if num>=0:
+#     if num%2 == 0:
+#         print("Even Number")
+#     else:
+#         print("Odd Number")
+# else:
+#     print("Negative number")
+
+
+# store = int(input("Enter data :"))
+
+# print(store)
+# print(type(store))
+
+# num = int(input("Enter Number : "))
+
+# if num>=18:
+#     print("You are eligible to vote")
+# else:
+#     print("You are not eligible to vote")
+
+
+# marks = int(input("Enter your marks :"))
+
+# if (marks>=90):
+#     print("Grade A")
+# elif (marks>=80):
+#     print("Grade B")
+# elif (marks>=70):
+#     print("Grade C")
+# else:
+#     print("Failed")
+
+
+# print("Pawan","Anoop","Pankaj",sep=" , ",end=" ---Name of my brother")
+
+
+# marks = 85
+
+# if (marks>=80):
+#     if (marks>=90):
+#         print("Grade A")
+#     else:
+#         print("Grade B")
+# else:
+#     print("Failed")
+
+
+
+# Match case
+
+# x = int(input("Enter first number : "))
+# y = int(input("Enter second number : "))
+
+# ops = input("Enter ops : ")
+
+# match ops:
+#     case '+':
+#         print(f"Addition of {x} + {y} is :",x+y)
+#     case '-':
+#         print("Sub of" , x , "-", y , "is :",x-y)
+#     case '*':
+#         print("Multply of {} * {} is : {}".format(x,y,x*y))
+#     case '/':
+#         print(f"Divide of {x} / {y} is :",x/y)
+#     case '%':
+#         print(f"Remainder of {x} % {y} is :",x%y)
+#     case _:
+#         print("Please enter correct ops!")
+        
+
+# Loop
+
+#  1. While Loop :
+
+# num = 90
+# while num <= 100:
+#     print(num)
+#     num = num + 1
+# print("End Loop")
+    
+    
+# For Loop
+
+# for num in range(1,21):
+#     print(num)
+
+
+# for sp in "Pawan":
+#     print(sp)
+
+
+# for num in range(2,21,2):
+#     print(num)
+
+
+# for num in range(10):
+#     print(num)
+
+# for num in range(10):
+#     print("hi")
+
+
+# Control Statements
+
+
+# age = int(input("Enter your age :"))
+
+# if age >= 18:
+#     print("You are eligible to vote")
+# else:
+#     print("You are not eligible!")
+
+
+# for num in range(1,11):
+#     if num == 5:
+#         break
+#     print(num)
+
+# for num in range(1,11):
+#     if num == 5:
+#         continue
+#     print(num)
+
+
+# for num in range(1,11):
+#    pass
+
+
+# name = "Pawan"
+
+# for l in name:
+#     print(l)
+
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[3])
+# print(name[4])
+# print(name[5]) #string index out of range
+
+# String Slicing
+
+# lang = "Python Programming"
+
+# print(lang[0:6])
+# print(lang[0:7])
+# print(lang[0:8])
+# print(lang[:8])
+# print(lang[5:])
+# print(lang[0:100])
+
+
+# fruits = ['apple', "apple", "banana", "cherry",54,47]
+
+
+# print(fruits)
+
+# fruits[1] = "Manago"
+
+# print(fruits)
+# print(fruits[-1])
+# print(fruits[-3])
+
+# # Slicing a List
+
+# print(fruits[0:2])
+# print(fruits[3:])
+
+# fruits.append("abc")
+
+# print(fruits)
+
+# fruits.insert(1,"ds")
+
+# print(fruits)
+
+# fruits.remove("cherry")
+
+# print(fruits)
+
+
+# my_tuple = (1,2,3,4,5,6,4)
+
+# print(my_tuple)
+
+# # my_tuple[2] = 33   # not ok
+
+# print(my_tuple)
+
+# my_tuple = (1,2,3,4,5,6,4,"Pawan")
+
+# print(my_tuple)
+
+
+# my_tuple = (1,"Pawan")
+
+# print(my_tuple)
+
+# print(type(my_tuple))
+
+# my_tuple = (1,)
+
+# print(my_tuple)
+
+# print(type(my_tuple))
+
+
+# my_tuple = (1,2,3,4,5,6,4)
+
+# print(my_tuple)
+
+# # my_tuple[2] = 33   # not ok
+
+# print(my_tuple[2])
+
+# my_list = [1,2,3,4,5,6,4]
+
+# print(my_list)
+
+# my_list [2] = 33   # not ok
+
+# print(my_list)
+
+# my_list = [1,2,3,4,5,6,4]
+
+# print(my_list)
+
+# my_list [2] = 33   # not ok
+
+# print(my_list[-1])
+
+# my_tuple = (1,2,3,4,5,6,4)
+
+# print(my_tuple)
+
+# my_tuple[2] = 33   # not ok
+
+# print(my_tuple[-1])
+
+
+# Slicing Tuples
+
+# my_tuple = (1,2,3,4,5,6,4)
+
+# print(my_tuple[2:])
+# print(my_tuple[2:5])
+# print(my_tuple.count(4))
+
+
+# my_tuple = (1,2,3,4,5,6,4)
+
+# for num in my_tuple:
+#     print(num)
+
+
+# student = {
+#     "name": "Fatima",
+#     "age": 20,
+#     "course": "Python"
+# }
+
+# print(student)
+# print(type(student))
+
+
+# print(student["name"])
+# print(student["age"])
+
+# student["city"] = "Amreli"
+
+# print(student)
+# student.update({"name":"Jenith"})
+# print(student)
+
+# student.pop("name")
+
+
+# print(student)
+
+
+# # student.clear()
+
+# print(student)
+
+
+# for i in student:
+#     print(student[i])
+
+# for key in student:
+#     print(key, "=", student[key])
+
+
+# Set
+
+# my_Set = {1,3,5,7}
+# print(my_Set)
+
+# my_Set = {1,3,5,5,7,3} # dublicate remove
+# print(my_Set)
+
+# my_Set = {1,3,5,7}
+# print(my_Set)
+
+# print(list(my_Set))
+# print(tuple(my_Set))
+
+# my_tuple = (1,2,3,4,5,6,4)
+
+# my_Set = set(my_tuple)
+# print(my_Set)
+
+# my_Set.add(123)
+
+# print(my_Set)
+
+# from datetime import datetime
+# year = int(input("Enter year : "))
+# appointment_month = int(input('Select Month: ')) 
+# appointment_day = int(input('Select Day: '))
+# dob =tuple(datetime(year, appointment_month, appointment_day))
+
+
+
+print("Welcom to the student Organizer!")
+
+print("Select an Option : ")
+
+students = []
+
+while True:
+    
+    print("1. Add Student")
+    print("2. Display all students")
+    print("3. Update students information")
+    print("4. Delete Student")
+    print("5. Disply subject offered")
+    print("6. Exit")
+
+    choice = int(input("Enter your choice: "))
+ 
+    match choice:
+        case 1:
+            print("Enter student details:")
+            name = input("Enter student name: ")
+            age = int(input("Enter student age: "))
+            grade = input("Enter student grade: ")
+            subjects_input = input("Enter subjects (comma-separated): ")
+            subjects = set(subjects_input.split(","))
+            student_id = input("Enter student ID: ")
+            dob = input("Enter date of birth (DD-MM-YYYY): ")
+            id_dob = (student_id, dob)
+            
+            student = {
+                "name": name,
+                "age": age,
+                "grade": grade,
+                "subjects": subjects,
+                "id_dob": id_dob
+            }
+            students.append(student)
+            
+            print(f"Student '{name}' added successfully!\n")
+        case 2:
+            print("All students : ")
+            print(students)
+                
+        case 3:
+            sid = input("Enter Student ID to update: ")
+            for s in students:
+                if s['id_dob'][0] == sid:
+                    print(f"Found student: {s['name']}")
+                    print("1. Update Age")
+                    print("2. Update Subjects")
+                    choice = input("Enter choice: ")
+
+                    if choice == '1':
+                        s['age'] = int(input("Enter new age: "))
+                        print("Age updated successfully!\n")
+                    elif choice == '2':
+                        subjects_input = input("Enter new subjects (comma-separated): ")
+                        s['subjects'] = set(subjects_input.split(","))
+                        print("Subjects updated successfully!\n")
+                    else:
+                        print("Invalid choice.\n")
+                
+                print("Student not found.\n")
+        case 4:
+            print("\n Delete Student Record")
+            sid = input("Enter Student ID to delete: ")
+            for i, s in enumerate(students):
+                if s['id_dob'][0] == sid:
+                    del students[i]
+                    print("Student record deleted successfully!\n")
+
+            print("Student not found.\n")
+        
+        case 5:
+            print("All Subjects : ")
+            for s in students:
+                print(f"Found student: {s['subjects']}")
+        case 6:
+            break
+        case _:
+            print("Invalid Input!")
+    
+  
+ 
+
