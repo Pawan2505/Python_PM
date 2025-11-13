@@ -546,88 +546,208 @@ print("My name is :",name,"Age is :",age)
 
 
 
-print("Welcom to the student Organizer!")
+# print("Welcom to the student Organizer!")
 
-print("Select an Option : ")
+# print("Select an Option : ")
 
-students = []
+# students = []
 
-while True:
+# while True:
     
-    print("1. Add Student")
-    print("2. Display all students")
-    print("3. Update students information")
-    print("4. Delete Student")
-    print("5. Disply subject offered")
-    print("6. Exit")
+#     print("1. Add Student")
+#     print("2. Display all students")
+#     print("3. Update students information")
+#     print("4. Delete Student")
+#     print("5. Disply subject offered")
+#     print("6. Exit")
 
-    choice = int(input("Enter your choice: "))
+#     choice = int(input("Enter your choice: "))
  
-    match choice:
-        case 1:
-            print("Enter student details:")
-            name = input("Enter student name: ")
-            age = int(input("Enter student age: "))
-            grade = input("Enter student grade: ")
-            subjects_input = input("Enter subjects (comma-separated): ")
-            subjects = set(subjects_input.split(","))
-            student_id = input("Enter student ID: ")
-            dob = input("Enter date of birth (DD-MM-YYYY): ")
-            id_dob = (student_id, dob)
+#     match choice:
+#         case 1:
+#             print("Enter student details:")
+#             name = input("Enter student name: ")
+#             age = int(input("Enter student age: "))
+#             grade = input("Enter student grade: ")
+#             subjects_input = input("Enter subjects (comma-separated): ")
+#             subjects = set(subjects_input.split(","))
+#             student_id = input("Enter student ID: ")
+#             dob = input("Enter date of birth (DD-MM-YYYY): ")
+#             id_dob = (student_id, dob)
             
-            student = {
-                "name": name,
-                "age": age,
-                "grade": grade,
-                "subjects": subjects,
-                "id_dob": id_dob
-            }
-            students.append(student)
+#             student = {
+#                 "name": name,
+#                 "age": age,
+#                 "grade": grade,
+#                 "subjects": subjects,
+#                 "id_dob": id_dob
+#             }
+#             students.append(student)
             
-            print(f"Student '{name}' added successfully!\n")
-        case 2:
-            print("All students : ")
-            print(students)
+#             print(f"Student '{name}' added successfully!\n")
+#         case 2:
+#             print("All students : ")
+#             print(students)
                 
-        case 3:
-            sid = input("Enter Student ID to update: ")
-            for s in students:
-                if s['id_dob'][0] == sid:
-                    print(f"Found student: {s['name']}")
-                    print("1. Update Age")
-                    print("2. Update Subjects")
-                    choice = input("Enter choice: ")
+#         case 3:
+#             sid = input("Enter Student ID to update: ")
+#             for s in students:
+#                 if s['id_dob'][0] == sid:
+#                     print(f"Found student: {s['name']}")
+#                     print("1. Update Age")
+#                     print("2. Update Subjects")
+#                     choice = input("Enter choice: ")
 
-                    if choice == '1':
-                        s['age'] = int(input("Enter new age: "))
-                        print("Age updated successfully!\n")
-                    elif choice == '2':
-                        subjects_input = input("Enter new subjects (comma-separated): ")
-                        s['subjects'] = set(subjects_input.split(","))
-                        print("Subjects updated successfully!\n")
-                    else:
-                        print("Invalid choice.\n")
+#                     if choice == '1':
+#                         s['age'] = int(input("Enter new age: "))
+#                         print("Age updated successfully!\n")
+#                     elif choice == '2':
+#                         subjects_input = input("Enter new subjects (comma-separated): ")
+#                         s['subjects'] = set(subjects_input.split(","))
+#                         print("Subjects updated successfully!\n")
+#                     else:
+#                         print("Invalid choice.\n")
                 
-                print("Student not found.\n")
-        case 4:
-            print("\n Delete Student Record")
-            sid = input("Enter Student ID to delete: ")
-            for i, s in enumerate(students):
-                if s['id_dob'][0] == sid:
-                    del students[i]
-                    print("Student record deleted successfully!\n")
+#                 print("Student not found.\n")
+#         case 4:
+#             print("\n Delete Student Record")
+#             sid = input("Enter Student ID to delete: ")
+#             for i, s in enumerate(students):
+#                 if s['id_dob'][0] == sid:
+#                     del students[i]
+#                     print("Student record deleted successfully!\n")
 
-            print("Student not found.\n")
+#             print("Student not found.\n")
         
-        case 5:
-            print("All Subjects : ")
-            for s in students:
-                print(f"Found student: {s['subjects']}")
-        case 6:
-            break
-        case _:
-            print("Invalid Input!")
+#         case 5:
+#             print("All Subjects : ")
+#             for s in students:
+#                 print(f"Found student: {s['subjects']}")
+#         case 6:
+#             break
+#         case _:
+#             print("Invalid Input!")
     
+# x = int(input("start : ")) 
+    
+# for num in range(1,21):
+#     if num%2 == 0:
+#         print("Number is even : ",num)
+#     else:
+#         print("Number is odd : ",num)
   
  
+ 
+ 
+# *
+# **
+# ***
+# ****
 
+# row = int(input("Enter row : "))
+
+# for i in range(0,row+1):
+#     for j in range(0,i):
+#         print("*",end="")
+#     print("")
+    
+    
+# def add(x, y):
+#     sum = x+y
+#     print(sum)
+    
+    
+# add(100,20)
+
+# def add():
+#     x = 10
+#     y=20
+#     sum = x+y
+#     print(sum)
+    
+    
+# add()
+
+# def add(x, y):
+#     print(x)
+#     print(y)
+#     sum = x+y
+#     print(sum)
+    
+    
+# add(y = 100,x = 20)
+
+    
+# def add(x, y):
+#     sum = x+y
+#     return sum
+    
+    
+# # result = add(100,20)
+# # print(result)
+# print(add(12,24))
+
+# def add():
+#     x =10
+#     y=29
+#     sum = x+y
+#     return sum
+    
+    
+
+# print(add())
+
+# def add(x=11, y=22):
+#     sum = x+y
+#     return sum
+    
+    
+# result = add(100,20)
+# # result = add()
+# print(result)
+
+# def add(*x):
+#     print(sum(x))
+    
+    
+# add(100,20,23,45,67)
+
+# def student_info(**details):
+#     print(details)
+
+# mark = int(input("Enter marks :"))
+# student_info(name='Ravi', age=20, marks=mark)
+
+# add = lambda x:x*x
+
+# result = add(12)
+
+# print(result)
+
+
+# add = lambda x,y:y*y
+
+# result = add(12,2)
+
+# print(result)
+
+
+# def add(x, y):
+#     """Sum of x and y"""
+#     sum = x+y
+#     return sum
+    
+    
+# result = add(100,20)
+# print(result)
+# print(add.__doc__)
+
+
+# factorial of given number
+
+# num = int(input("Enter number :"))
+# fact = 1
+# for x in range(1,num+1):
+#     fact = fact*x
+
+# print(fact)
