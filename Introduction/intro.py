@@ -751,3 +751,90 @@ print("My name is :",name,"Age is :",age)
 #     fact = fact*x
 
 # print(fact)
+
+# x = 10   # global variable
+
+# def show():
+#     x = 20   # local variable
+#     print("Local x =", x)
+#     print("Global x =", globals()['x'])
+
+# show()
+
+
+# x = 10   # global variable
+
+# def show():
+#     global x
+#     x = 20   
+#     print("Local x =", x)
+
+
+# show()
+# print(x)
+
+
+# def details(*x):
+#     return x
+
+# result = details(12,34,56,78)
+
+# print(result)
+
+
+# def details(*x):
+#     return x
+
+# a,b,c,d = details(12,34,56,78)
+
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+# Function Recursion
+
+
+# base condition -> function ko rokne ka work krta
+# sef call
+
+
+# question : factorial
+
+# 5! = 5*4*3*2*1 => 120
+
+# def fact(x):
+#     if(x<0):
+#         print("You enterd negative value")
+#         return
+#     if x == 1:   #base condition
+#         return 1
+   
+#     return x*fact(x-1)
+
+# result = fact(-6)
+# print(result)
+
+
+# arr = [10,20,30,50]
+
+# print(arr)
+
+# print(type(arr))
+
+
+# arr = [10,20,30,50]
+
+# for element in range(0,4):
+#     print(arr[element], end=" ")
+
+
+
+# arr = [10,20,30,50]
+
+# sum = 0
+
+# for element in range(0,4):
+#     sum = sum + arr[element]
+    
+# print("sum of all element of array : ",sum)
