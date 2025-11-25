@@ -838,3 +838,55 @@ print("My name is :",name,"Age is :",age)
 #     sum = sum + arr[element]
     
 # print("sum of all element of array : ",sum)
+
+
+# arr = [
+#     [12,23,45],
+#     [67,78,98],
+#     [23,54,12]
+#     ]
+
+# print(arr)
+
+
+# for row in range(0,3):
+#    for col in range(0,3):
+#        print(arr[row][col],end=" ")
+#    print("")
+     
+     
+# for row in range(0,3):
+#    print(arr[row])
+
+
+
+# arr = [
+#     [12,23,45],
+#     [67,78,98],
+#     [23,54,12]
+#     ]
+
+# # print(arr)
+
+
+# for row in arr:
+#    for col in row:
+#        print(col,end=" ")
+#    print("")
+
+
+row = 3
+
+col = 4
+
+matrix = []
+
+for index in range(row):
+    row = []
+    for j in range(col):
+        val = int(input("Enter value : "))
+        row.append(val)
+    matrix.append(row)
+    
+    
+print(matrix);  
