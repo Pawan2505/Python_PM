@@ -875,18 +875,76 @@ print("My name is :",name,"Age is :",age)
 #    print("")
 
 
-row = 3
+# row = 3
 
-col = 4
+# col = 4
 
-matrix = []
+# matrix = []
 
-for index in range(row):
-    row = []
-    for j in range(col):
-        val = int(input("Enter value : "))
-        row.append(val)
-    matrix.append(row)
+# for index in range(row):
+#     row = []
+#     for j in range(col):
+#         val = int(input("Enter value : "))
+#         row.append(val)
+#     matrix.append(row)
     
     
-print(matrix);  
+# print(matrix);  
+
+
+# s = {11, 62, 3, 4}
+
+
+# for i in s:
+#     print(i)
+
+# s.remove(62)
+
+# print(s)
+
+
+# s = {12,11, 62, 3, 4}
+
+
+# for i in s:
+#     print(i)
+
+# s.discard(62)
+# s.pop() 
+
+# print(s)
+
+
+# def greet():
+#     print("Hello, welcome to Python!")
+
+# greet()  # Function call
+
+# def greet(name):
+#     print("Hello", name)
+
+# greet("Fatima")     # Output: Hello Fatima
+
+
+# square = lambda x: x * x
+# print(square(4))   # Output: 16
+
+
+class Student:
+    
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    
+    def details(self):
+        print("Name : ",self.name)
+        print("Age : ",self.age)
+        
+    
+s1 = Student("Jenith",16)
+s2 = Student("Pawan",25)
+
+s1.details()
+# del s1
+s2.details()
+s1.details()
