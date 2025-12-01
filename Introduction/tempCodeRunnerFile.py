@@ -1,2 +1,1 @@
-
-print(s)
+speak(self

@@ -930,21 +930,193 @@ print("My name is :",name,"Age is :",age)
 # print(square(4))   # Output: 16
 
 
-class Student:
+# class Student:
     
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
     
-    def details(self):
-        print("Name : ",self.name)
-        print("Age : ",self.age)
+#     def details(self):
+#         print("Name : ",self.name)
+#         print("Age : ",self.age)
         
     
-s1 = Student("Jenith",16)
-s2 = Student("Pawan",25)
+# s1 = Student("Jenith",16)
+# s2 = Student("Pawan",25)
 
-s1.details()
-# del s1
-s2.details()
-s1.details()
+# s1.details()
+# # del s1
+# s2.details()
+# s1.details()
+
+
+# class Demo:
+#     def __init__(self,x):
+#         self.x = x # public attribute
+
+# obj = Demo(10)
+# print(obj.x)  # Accessible outside: Output: 10
+
+
+
+# class Demo:
+#     def __init__(self,x):
+#         self._x = x # protected attribute
+        
+#     def display(self):
+#         print(self._x)
+
+# obj = Demo(10)
+# print(obj._x)  #Accessible outside
+
+# # obj.display()
+
+
+# class Demo:
+#     def __init__(self,x):
+#         self.__x = x # protected attribute
+        
+#     def display(self):
+#         print(self.__x)
+
+# obj = Demo(10)
+# # print(obj.__x)  #Accessible outside
+
+# obj.display()
+
+
+# class is Public (Default in Python)
+
+'''How it works:
+
+Any variable or method without an underscore (_) is public.
+
+Accessible inside and outside the class.'''
+
+# Protected (_single_underscore)
+'''
+How it works:
+
+Attributes starting with _ are treated as protected.
+
+Meant to be used within class and subclasses.
+
+Not strictly enforced—still accessible from outside.
+'''
+# Private (__double_underscore)
+
+'''
+
+How it works:
+
+Attributes starting with __ become private.
+
+Cannot be accessed directly from outside.
+
+Python internally renames the variable to _ClassName__variable.
+
+'''
+
+
+# class A:
+    
+#     def __init__(self,name):
+#         self.name = name
+        
+#     def __del__(self):
+#         print("Memory relized... ",self.name)
+        
+#     def display(self):
+#         print("Name : ",self.name)
+        
+
+# a = A("Pawan")
+
+# a.display()
+# del a # destructor runs immediately
+
+# single Inheriatance
+            
+# class Parent:
+#     def speak(self):
+#         print("I am Parent")
+
+# class Child(Parent):
+#     pass
+
+# c = Child()
+# c.speak()
+
+
+# Multilevel Inheritance
+
+# class Grandparent:
+#     def who(self):
+#         print("I am Grandparent")
+
+# class Parent(Grandparent):
+#     def grret(Sef):
+#         print("Hello Greet")
+
+# class Child(Parent):
+#     pass
+
+# c = Child()
+# c.who()
+# c.grret()
+
+
+# Multiple Inheritance
+
+# class A:
+#     def showA(self):
+#         print("A class")
+
+# class B:
+#     def showB(self):
+#         print("B class")
+
+# class C(A, B):
+#     pass
+
+# obj = C()
+# obj.showA()
+# obj.showB()
+
+
+# Hierarchical Inheritance
+
+# class Parent:
+#     def speak(self):
+#         print("Parent speaking")
+
+# class Child1(Parent):
+#     pass
+
+# class Child2(Parent):
+#     pass
+
+# c1 = Child1()
+# c2 = Child2()
+
+# c1.speak()
+# c2.speak()
+
+# Hybrid Inheritance
+
+# class Parent:
+#     def speak(self):
+#         print("Parent speaking")
+
+# class Child1(Parent):
+#     pass
+
+# class Child2(Parent):
+#     pass
+
+# class D(Child1,Child2):
+#     pass
+
+# d = D()
+
+# d.speak()
