@@ -1120,3 +1120,114 @@ Python internally renames the variable to _ClassName__variable.
 # d = D()
 
 # d.speak()
+
+
+#  Nested function
+
+# def display():
+#     print("display function")
+#     def details():
+#         print("Details function..")
+    
+#     details()
+        
+
+
+# # details() # not ok
+
+# display()
+
+
+# - Reflection enabling functions
+
+
+# obj = {"name":"Pawan","age":25}
+
+# print(obj)
+
+
+# class A:
+    
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+        
+#     def display(self):
+#         print("Name : ",self.name)
+#         print("Age : ",self.age)
+
+
+# obj = A("Pawan",25)
+
+# obj.display()
+
+# print(type(obj))
+
+# print(id(obj))
+
+# print(hasattr(obj, "name"))
+# print(hasattr(obj, "age"))
+# print(hasattr(obj, "xyz"))  # attribute not present
+
+
+# print(getattr(obj, "name"))
+# print(getattr(obj, "age"))
+
+# setattr(obj, "salary",99999)
+
+# print(hasattr(obj, "salary"))
+
+# print(getattr(obj, "salary"))
+# delattr(obj, "salary")
+# print(hasattr(obj, "salary"))
+
+
+# 1. callable() → Check if an object can be called like a function
+
+# def greet():
+#     print("Hello")
+
+# x = 10
+
+# print(callable(greet))   # True (because greet is a function)
+# print(callable(x))       # False (integer is not callable)
+
+
+# 2. isinstance() → Check if an object belongs to a class
+
+# class A:
+#     pass
+
+# obj = A()
+
+# print(isinstance(obj, A))    # True
+# print(isinstance(obj, float))  # False
+
+# 3. issubclass() → Check if one class is a subclass of another
+
+# class Animal:
+#     pass
+
+# class Dog(Animal):
+#     pass
+
+# print(issubclass(Dog, Animal))   # True
+# print(issubclass(Animal, Dog))   # False
+
+
+# dir() is used to list all attributes and methods of any object.
+
+# class A:
+#     def __init__(self):
+#         self.name = "Pawan"
+
+#     def greet(self):
+#         return "Hello"
+
+# obj = A()
+
+# print(dir(obj))
+
+x = 10
+print(dir(x))
+

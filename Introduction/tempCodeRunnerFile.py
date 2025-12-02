@@ -1,1 +1,1 @@
-speak(self
+Animal
