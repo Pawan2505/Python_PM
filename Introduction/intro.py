@@ -1228,6 +1228,73 @@ Python internally renames the variable to _ClassName__variable.
 
 # print(dir(obj))
 
-x = 10
-print(dir(x))
+# x = 10
+# print(dir(x))
 
+# class Calculator:
+#     def add(self, a=0, b=0, c=0):
+#         print("Sum:", a + b + c)
+
+# obj = Calculator()
+# obj.add(10, 20)        # Sum: 30
+# obj.add(5, 5, 5)       # Sum: 15
+# obj.add()              # Sum: 0
+
+
+
+# class Calculator:
+#     def multiply(self, a=1, b=1, c=1):
+#         if a==b==c==1:
+#             print("Multiply:", 0)
+#         else:
+#             print("Multiply:", a * b * c)
+
+# obj = Calculator()
+# obj.multiply(10, 20)        # Multiply: 200
+# obj.multiply(5, 5, 5)       # Multiply: 125
+# obj.multiply()              # Multiply: 0
+# obj.multiply(1)              # Multiply: 1
+
+
+# class Calculator:
+#     def multiply(self, *args):
+#             print("Multiply:", args)
+#             sum = 0
+#             for element in args:
+#                 sum +=element
+            
+#             print("Sum : ",sum)
+                
+
+# obj = Calculator()
+# obj.multiply(10, 20)        # Multiply: 200
+# obj.multiply(5, 5, 5)       # Multiply: 125
+# obj.multiply()              # Multiply: 0
+# obj.multiply(1)   
+
+
+# class Animal:
+#     def speak(self):
+#         print("Animal speaks")
+
+# class Dog(Animal):
+#     def speak(self):
+#         print("Dog barks")
+
+# d = Dog()
+# d.speak()   # Output: Dog barks
+
+# print(issubclass(Dog,Animal))
+
+
+class Person:
+    def show(self):
+        print("Person class")
+
+class Student(Person):
+    def display(self):
+        super().show()       # Calls parent method
+        print("Student class")
+
+s = Student()
+s.display()
