@@ -1287,14 +1287,89 @@ Python internally renames the variable to _ClassName__variable.
 # print(issubclass(Dog,Animal))
 
 
-class Person:
-    def show(self):
-        print("Person class")
+# class Person:
+#     def show(self):
+#         print("Person class")
 
-class Student(Person):
-    def display(self):
-        super().show()       # Calls parent method
-        print("Student class")
+# class Student(Person):
+#     def display(self):
+#         super().show()       # Calls parent method
+#         print("Student class")
 
-s = Student()
-s.display()
+# s = Student()
+# s.display()
+
+
+# try:
+    
+#     num = int(input("Enter number"))
+    
+#     result = 100/num
+    
+#     print("Result : ",result)
+    
+# except:
+#     print("oops something wrong!")    
+
+# try:
+    
+#     num = int(input("Enter number"))
+    
+#     result = 100/num   
+# except ZeroDivisionError:
+#     print("ZeroDivisionError : oops something wrong!")    
+# except ValueError:
+#     print("ValueError : oops something wrong!") 
+    
+# else:
+#     print("Result : ",result)
+
+
+# try:
+#     num = int(input("Enter number"))
+#     result = 100/num   
+# except ZeroDivisionError as ex:
+#     print("ZeroDivisionError : oops something wrong!",ex)    
+# except ValueError as ex:
+#     print("ValueError : oops something wrong!",ex) 
+    
+# else:
+#     print("Result : ",result)
+
+# f = None
+
+# try:
+#     f = open("datagf.txt", "r")
+#     # lines = f.readlines()
+#     lines = f.read()
+#     print(lines)
+
+# except Exception as e:
+#     print("Error:", e)
+
+# finally:
+#     if f is not None:
+#         f.close()
+#         print("File closed.")
+#     else:
+#         print("File was not opened.")
+
+
+
+# age = int(input("Enter your age: "))
+# if age < 18:
+#     raise ValueError("You must be 18 or older.")
+# else:
+#     print("Welcome!")
+
+# age = int(input("Enter your age: "))
+# if age == 0:
+#     raise ZeroDivisionError("age can not be zero.")
+
+# else:    
+#     print("Welcome!")
+
+
+x = int(input("Enter a positive number: "))
+assert x > 0, "Number must be positive!"
+print("You entered:", x)
